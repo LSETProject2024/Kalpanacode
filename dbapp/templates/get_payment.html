@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Payment</h1>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Paymentmethod</th>
+    </tr>
+    {% for i in payment%}
+    <tr>
+        <td>{{i.amount}}</td>
+        <td>{{i.paymentmethod}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
